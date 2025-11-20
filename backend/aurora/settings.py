@@ -29,17 +29,30 @@ TEMPLATES = [{"BACKEND": "django.template.backends.django.DjangoTemplates", "DIR
                            "django.contrib.messages.context_processors.messages"]}}]
 WSGI_APPLICATION = "aurora.wsgi.application"
 # Database - use env vars; default matches user's MySQL database name aurora_trade
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": os.getenv("MYSQL_DATABASE", "aurora_trade"),
+#         "USER": os.getenv("MYSQL_USER", "root"),
+#         "PASSWORD": os.getenv("MYSQL_PASSWORD", ""),
+#         "HOST": os.getenv("MYSQL_HOST", "127.0.0.1"),
+#         "PORT": os.getenv("MYSQL_PORT", "3306"),
+#         "OPTIONS": {"charset": "utf8mb4"},
+#     }
+# }
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": os.getenv("MYSQL_DATABASE", "aurora_trade"),
-        "USER": os.getenv("MYSQL_USER", "root"),
-        "PASSWORD": os.getenv("MYSQL_PASSWORD", ""),
-        "HOST": os.getenv("MYSQL_HOST", "127.0.0.1"),
-        "PORT": os.getenv("MYSQL_PORT", "3306"),
+        "NAME": "aurora_trade",
+        "USER": "root",
+        "PASSWORD": "jCzsIaXlWjcEuUGKJGaZmzdugEyCKyfL",
+        "HOST": "tramway.proxy.rlwy.net",
+        "PORT": "18601",
         "OPTIONS": {"charset": "utf8mb4"},
     }
 }
+
 AUTH_PASSWORD_VALIDATORS = []
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "Asia/Shanghai"
