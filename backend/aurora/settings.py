@@ -44,7 +44,7 @@ WSGI_APPLICATION = "aurora.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "aurora_trade",
+        "NAME": "railway",
         "USER": "root",
         "PASSWORD": "jCzsIaXlWjcEuUGKJGaZmzdugEyCKyfL",
         "HOST": "tramway.proxy.rlwy.net",
