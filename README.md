@@ -1,5 +1,4 @@
-
-Aurora minimal scaffold.
+### Aurora Trade Project
 
 Backend: backend/
 Frontend: frontend/
@@ -12,4 +11,3 @@ Instructions:
 1. Backend: set environment variables in backend/.env or export them. Install python packages, run migrations, create superuser, runserver.
 2. Frontend: npm install in frontend, npm start.
 
-The zip contains everything required to run locally. The email sending uses Django console backend by default (prints codes to console).
